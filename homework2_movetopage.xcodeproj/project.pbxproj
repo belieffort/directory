@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		729E9AD920A9CBC60093CD1D /* Directory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E9AD720A9CBC60093CD1D /* Directory+CoreDataClass.swift */; };
+		729E9ADA20A9CBC60093CD1D /* Directory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E9AD820A9CBC60093CD1D /* Directory+CoreDataProperties.swift */; };
+		729E9ADC20A9D6620093CD1D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E9ADB20A9D6620093CD1D /* TableViewCell.swift */; };
 		72A25F4320A9708900FB70AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F4220A9708900FB70AA /* AppDelegate.swift */; };
 		72A25F4520A9708900FB70AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F4420A9708900FB70AA /* ViewController.swift */; };
 		72A25F4820A9708900FB70AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A25F4620A9708900FB70AA /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 		72A25F5020A9708B00FB70AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A25F4E20A9708B00FB70AA /* LaunchScreen.storyboard */; };
 		72A25F5B20A9708B00FB70AA /* homework2_movetopageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F5A20A9708B00FB70AA /* homework2_movetopageTests.swift */; };
 		72A25F6620A9708B00FB70AA /* homework2_movetopageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F6520A9708B00FB70AA /* homework2_movetopageUITests.swift */; };
+		72A25F7420A9AC3500FB70AA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F7320A9AC3500FB70AA /* TableViewController.swift */; };
+		72A25F7820A9B5CB00FB70AA /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F7720A9B5CB00FB70AA /* AddViewController.swift */; };
+		72A25F7A20A9BF2B00FB70AA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A25F7920A9BF2B00FB70AA /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		729E9AD720A9CBC60093CD1D /* Directory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Directory+CoreDataClass.swift"; path = "../Directory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		729E9AD820A9CBC60093CD1D /* Directory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Directory+CoreDataProperties.swift"; path = "../Directory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		729E9ADB20A9D6620093CD1D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		72A25F3F20A9708900FB70AA /* homework2_movetopage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homework2_movetopage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A25F4220A9708900FB70AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A25F4420A9708900FB70AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		72A25F6120A9708B00FB70AA /* homework2_movetopageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homework2_movetopageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A25F6520A9708B00FB70AA /* homework2_movetopageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homework2_movetopageUITests.swift; sourceTree = "<group>"; };
 		72A25F6720A9708B00FB70AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A25F7320A9AC3500FB70AA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		72A25F7720A9B5CB00FB70AA /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		72A25F7920A9BF2B00FB70AA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		72A25F4120A9708900FB70AA /* homework2_movetopage */ = {
 			isa = PBXGroup;
 			children = (
+				729E9AD720A9CBC60093CD1D /* Directory+CoreDataClass.swift */,
+				729E9AD820A9CBC60093CD1D /* Directory+CoreDataProperties.swift */,
 				72A25F4220A9708900FB70AA /* AppDelegate.swift */,
 				72A25F4420A9708900FB70AA /* ViewController.swift */,
 				72A25F4620A9708900FB70AA /* Main.storyboard */,
@@ -106,6 +120,10 @@
 				72A25F4E20A9708B00FB70AA /* LaunchScreen.storyboard */,
 				72A25F5120A9708B00FB70AA /* Info.plist */,
 				72A25F4920A9708900FB70AA /* homework2_movetopage.xcdatamodeld */,
+				72A25F7320A9AC3500FB70AA /* TableViewController.swift */,
+				72A25F7720A9B5CB00FB70AA /* AddViewController.swift */,
+				72A25F7920A9BF2B00FB70AA /* EditViewController.swift */,
+				729E9ADB20A9D6620093CD1D /* TableViewCell.swift */,
 			);
 			path = homework2_movetopage;
 			sourceTree = "<group>";
@@ -259,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A25F7820A9B5CB00FB70AA /* AddViewController.swift in Sources */,
+				729E9ADA20A9CBC60093CD1D /* Directory+CoreDataProperties.swift in Sources */,
 				72A25F4520A9708900FB70AA /* ViewController.swift in Sources */,
+				729E9ADC20A9D6620093CD1D /* TableViewCell.swift in Sources */,
+				72A25F7A20A9BF2B00FB70AA /* EditViewController.swift in Sources */,
 				72A25F4B20A9708900FB70AA /* homework2_movetopage.xcdatamodeld in Sources */,
 				72A25F4320A9708900FB70AA /* AppDelegate.swift in Sources */,
+				72A25F7420A9AC3500FB70AA /* TableViewController.swift in Sources */,
+				729E9AD920A9CBC60093CD1D /* Directory+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
