@@ -12,7 +12,7 @@ import CoreData
 
 class TableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
-    var controller:NSFetchedResultsController<Directory>!
+   var controller:NSFetchedResultsController<Directory>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +90,7 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
     }
     
     
+    
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch (type) {
         case .insert:
@@ -102,9 +103,12 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
         case .update:
+                //덮어써야 하는데, 덮어 쓰지 못하고 있다.
             if let indexPath = indexPath {
-                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.reloadRows(at: [indexPath], with: .fade)
             }
+             break
+            
         default:
             break
         }
@@ -157,15 +161,16 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "detail" {
-            
+        
             let viewController: ViewController  = segue.destination as! ViewController
             let directory = controller.object(at: tableView.indexPathForSelectedRow!)
             
         viewController.directory = directory
+            
         }
-       
     }
 
     
+
 
 }

@@ -110,12 +110,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Z9-pt-JVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4200.5" y="-597.5"/>
+            <point key="canvasLocation" x="4199.1999999999998" y="-597.75112443778119"/>
         </scene>
         <!--수정-->
         <scene sceneID="hIA-nC-UQI">
             <objects>
-                <viewController id="xf8-Fi-TDW" customClass="EditViewController" customModule="homework2_movetopage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditViewController" id="xf8-Fi-TDW" customClass="EditViewController" customModule="homework2_movetopage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UjO-dG-PFB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

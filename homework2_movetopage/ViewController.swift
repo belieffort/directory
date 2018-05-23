@@ -8,27 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController  {
+
+    var directory: Directory!
+
     @IBOutlet var lblName: UILabel!
     @IBOutlet var lblCompany: UILabel!
     @IBOutlet var lblAddress: UILabel!
     @IBOutlet var lblPhone: UILabel!
     @IBOutlet var lblHomeNumber: UILabel!
     
-    var directory: Directory?
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        lblName.text = directory?.name
-        lblCompany.text = directory?.company
-        lblAddress.text = directory?.address
-        lblPhone.text = directory?.phone
-        lblHomeNumber.text = directory?.homeNumber
-
+        lblName.text = directory.name
+        lblCompany.text = directory.company
+        lblAddress.text = directory.address
+        lblPhone.text = directory.phone
+        lblHomeNumber.text = directory.homeNumber
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +38,6 @@ class ViewController: UIViewController {
     }
 
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let editPage = segue.destination as? EditViewController else { return}
         editPage.editName = lblName.text
@@ -45,7 +45,19 @@ class ViewController: UIViewController {
         editPage.editAddress = lblAddress.text
         editPage.editPhone = lblPhone.text
         editPage.editHomeNumber = lblHomeNumber.text
-
+        
+        
+        directory.name = lblName.text
+        directory.company = lblCompany.text
+        directory.address = lblAddress.text
+        directory.phone = lblPhone.text
+        directory.homeNumber = lblHomeNumber.text
+        
+        editPage.directory = directory!
+        
+        appDelegate.saveContext()
+        _ = navigationController?.popViewController(animated: true)
+        
     }
     
 }

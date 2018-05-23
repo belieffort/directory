@@ -10,8 +10,8 @@ import UIKit
 import CoreData
 
 class EditViewController: UIViewController  {
-
-    var directory: Directory?
+    
+    var directory : Directory?
 
     @IBOutlet var foreditName: UITextField!
     @IBOutlet var foreditCompany: UITextField!
@@ -30,7 +30,6 @@ class EditViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        
         foreditName.text = editName
         foreditCompany.text = editCompany
         foreditAddress.text = editAddress
@@ -50,13 +49,34 @@ class EditViewController: UIViewController  {
     @IBAction func btnDelete(_ sender: UIButton) {
         context.delete(directory!)
         appDelegate.saveContext()
-
+        _ = navigationController?.popViewController(animated: true)
+     
         
-    }
+        }
     
     @IBAction func btnEditDone(_ sender: UIButton) {
         
+        let name = foreditName.text
+        let company = foreditCompany.text
+        let address = foreditAddress.text
+        let phone = foreditPhone.text
+        let homeNumber = foreditHomeNumber.text
         
+        let directory = Directory(context: context)
+        
+        directory.name = name
+        directory.company = company
+        directory.address = address
+        directory.phone = phone
+        directory.homeNumber = homeNumber
+        
+        
+        appDelegate.saveContext()
+
+        
+        _ = navigationController?.popViewController(animated: true)
+        
+ 
     }
     
     
